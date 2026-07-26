@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>hi.</title>
+<title>🌻</title>
 
 <style>
 
-body{
-
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 
 background:#FAF7F2;
 
-font-family:Arial, sans-serif;
+font-family:Arial,Helvetica,sans-serif;
+
+height:100vh;
 
 display:flex;
 
@@ -25,39 +28,73 @@ justify-content:center;
 
 align-items:center;
 
-height:100vh;
-
 overflow:hidden;
 
-}
-
-.container{
-
-text-align:center;
+color:#555;
 
 }
 
-.flower{
+.screen{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+transition:.6s;
+
+}
+
+.hidden{
+
+opacity:0;
+
+pointer-events:none;
+
+}
+
+.sunflower{
 
 font-size:90px;
 
 cursor:pointer;
 
-transition:.4s;
+transition:.3s;
 
 }
 
-.flower:hover{
+.sunflower:active{
 
-transform:scale(1.2);
+transform:scale(1.15);
 
 }
 
-p{
+.title{
 
-color:#555;
+margin-top:25px;
 
-font-size:18px;
+font-size:22px;
+
+font-weight:bold;
+
+}
+
+.small{
+
+margin-top:12px;
+
+font-size:15px;
+
+opacity:.7;
 
 }
 
@@ -67,18 +104,37 @@ font-size:18px;
 
 <body>
 
-<div class="container">
+<div id="page1" class="screen">
 
-<div class="flower">
+<div class="sunflower" onclick="nextPage()">
 
 🌻
 
 </div>
 
-<p>tap the flower.</p>
+<div class="title">
+
+pls bear with my ka-cornyhan.
 
 </div>
 
-</body>
+<div class="small">
 
+one tap.
+
+</div>
+
+</div>
+
+<script>
+
+function nextPage(){
+
+document.getElementById("page1").classList.add("hidden");
+
+}
+
+</script>
+
+</body>
 </html>
