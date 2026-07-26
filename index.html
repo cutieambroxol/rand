@@ -1,1 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌻</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#faf7f2;
+font-family:Arial,Helvetica,sans-serif;
+color:#444;
+overflow:hidden;
+
+}
+
+.page{
+
+width:100vw;
+height:100vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+position:absolute;
+top:0;
+left:0;
+
+transition:.6s;
+
+}
+
+.hidden{
+
+opacity:0;
+pointer-events:none;
+
+}
+
+.sunflower{
+
+font-size:90px;
+cursor:pointer;
+transition:.35s;
+
+}
+
+.sunflower:active{
+
+transform:scale(1.15);
+
+}
+
+h1{
+
+font-size:22px;
+margin-top:25px;
+font-weight:600;
+
+}
+
+.small{
+
+margin-top:12px;
+font-size:15px;
+opacity:.75;
+
+}
+
+.envelope{
+
+font-size:90px;
+
+}
+
+button{
+
+margin-top:30px;
+padding:12px 35px;
+
+border:none;
+border-radius:50px;
+
+background:#edd88c;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+.letter{
+
+padding:45px 30px;
+
+overflow-y:auto;
+
+justify-content:flex-start;
+align-items:flex-start;
+
+}
+
+.content{
+
+max-width:700px;
+margin:auto;
+
+line-height:1.9;
+font-size:17px;
+
+}
+
+.content p{
+
+margin-bottom:24px;
+
+}
+
+.end{
+
+text-align:center;
+font-size:28px;
+margin-top:50px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="page1" class="page">
+
+<div class="sunflower" onclick="showEnvelope()">
+
+🌻
+
+</div>
+
+<h1>
+
+pls bear with my ka-cornyhan.
+
+</h1>
+
+<div class="small">
+
+tap the sunflower.
+
+</div>
+
+</div>
+
+<div id="page2" class="page hidden">
+
+<div class="envelope">
+
+📩
+
+</div>
+
+<h1>
+
+you don't have to read this.
+
+</h1>
+
+<div class="small">
+
+...but if u insist.
+
+</div>
+
+<button onclick="showLetter()">
+
+open
+
+</button>
+
+</div>
+  <div id="page3" class="page letter hidden">
+
+<div class="content">
+
+<p>
+I like this version of me. I like things the way they are, and I like the feelings I have for you right now.
+</p>
+
+<p>
+we've only talked for one night, so we don't really know each other personally. there's no real communication between us, and maybe that's why I don't want these feelings to grow any deeper. because even though there's no proper communication between us, my feelings keep getting deeper. Is that even possible? I honestly don't know either. maybe it sounds weird to you too, hahahabwhwhw
+</p>
+
+<p>
+It's the first time I've ever liked someone enough to step out of my comfort zone and actually try to get your attention, hahaha. but that doesn't mean it's just simple attraction. It's a little more than that. I can't even tell you straight the reasons why I like you 😮‍💨. that's just not me, ahahshshs. I'm not expressive when it comes to my feelings, and I'm way too shy to say those things. but if you insist on knowing, then why not? ay hehwhwhsbwhw
+</p>
+
+<p>
+I've always liked the idea of us being friends. I've had so many urges to message you and get to know you on a deeper level. but every time I think about it, I remember the boundaries you've set. I also remember the personal things I still need to work on, so I choose to respect both. maybe admiring you from afar is enough.
+</p>
+
+<p>
+the playlist I made for u holds everything I'll probably never say out loud, my quiet admiration, concern, appreciation, and care for you. I don't expect it to change anything between us, nor am I hoping for anything in return. I only hope that, somehow, these songs make you feel seen, appreciated, cared for, and maybe even a little less alone.
+</p>
+
+<p>
+I don't know if you'll ever read this hahahaa. but if you do, at least you'll know my intentions and the feelings I have for you.
+</p>
+
+<p>
+i hope matiis kita. my first step is to deact my main 💀
+</p>
+
+<div class="end">
+
+bye 💀
+
+</div>
+
+</div>
+
+  </div>
+  
+<script>
+
+function showEnvelope(){
+
+document.getElementById("page1").classList.add("hidden");
+document.getElementById("page2").classList.remove("hidden");
+
+}
+
+function showLetter(){
+
+document.getElementById("page2").classList.add("hidden");
+document.getElementById("page3").classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
