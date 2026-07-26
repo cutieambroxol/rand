@@ -106,7 +106,71 @@ opacity:.7;
 
 <div id="page1" class="screen">
 
-<div class="sunflower" onclick="nextPage()">
+function nextPage(){
+
+document.getElementById("page1").classList.add("hidden");
+
+setTimeout(function(){
+
+document.body.innerHTML=`
+
+<div id="page2" class="screen">
+
+<div style="font-size:90px;">📩</div>
+
+<div class="title">
+
+you don't have to read this.
+
+</div>
+
+<div class="small">
+
+...but if u insist.
+
+</div>
+
+<button onclick="openLetter()">
+
+open
+
+</button>
+
+</div>
+
+<style>
+
+button{
+
+margin-top:25px;
+
+padding:12px 28px;
+
+border:none;
+
+border-radius:15px;
+
+font-size:16px;
+
+background:#E8D48E;
+
+color:#444;
+
+}
+
+</style>
+
+`;
+
+},600);
+
+}
+
+function openLetter(){
+
+alert("PART 3 🌻");
+
+}
 
 🌻
 
